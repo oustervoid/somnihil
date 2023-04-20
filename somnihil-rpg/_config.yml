@@ -18,16 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: somnihil
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+# twitter_username: jekyllrb
+# github_username:  oustervoid
 
 # Build settings
 theme: minima
@@ -36,24 +35,36 @@ plugins:
 
 # Collections
 collections:
+  rules:
+    output: true
+    permalink: /rules/:path/
   magic:
-    output: false
-      cognition:
-        output: false 
-      creation:
-        output: false 
-      decay:
-        output: false 
-      formation:
-        output: false 
-      sequence:
-        output: false 
-      spatial:
-        output: false 
-      time:
-        output: false 
-      void:
-        output: false
+    output: true
+    permalink: /magic/:path/
+    cognition:
+      output: true 
+      permalink: /cognition/:path/
+    creation:
+      output: true 
+      permalink: /creation/:path/
+    decay:
+      output: true 
+      permalink: /decay/:path/
+    formation:
+      output: true 
+      permalink: /formation/:path/
+    sequence:
+      output: true 
+      permalink: /sequence/:path/
+    spatial:
+      output: true 
+      permalink: /spatial/:path/
+    time:
+      output: true 
+      permalink: /time/:path/
+    void:
+      output: true
+      permalink: /void/:path/
          
 # Exclude from processing.
 # The following items will not be processed, by default.
